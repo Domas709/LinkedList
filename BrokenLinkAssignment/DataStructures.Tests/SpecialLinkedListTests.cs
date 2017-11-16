@@ -112,7 +112,7 @@ namespace DataStructures.Tests
             sut.Add(5);
             sut.Add(7);
             // Assert
-            Assert.AreEqual("1,2,3,5,7", sut.ToStringReverse());
+            Assert.AreEqual("1,2,3,5,7", sut.ToString()); //Changed ToStringReverse() to ToString() since it looks like it should be ToString();
         }
 
         [TestMethod]
@@ -127,7 +127,7 @@ namespace DataStructures.Tests
             sut.Add(5);
             sut.Add(7);
             // Assert
-            Assert.AreEqual("7,5,3,2,1", sut.ToString());
+            Assert.AreEqual("7,5,3,2,1", sut.ToStringReverse()); //Same situation as with ToString() (was ToString());
         }
 
         [TestMethod]
